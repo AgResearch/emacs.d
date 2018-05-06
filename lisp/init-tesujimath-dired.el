@@ -28,9 +28,11 @@
   (tesujimath/dired-view-external-aux (dired-current-directory)))
 
 (after-load 'dired
+  (load "dired-x")
+  (define-key dired-mode-map (kbd "C-c v") 'tesujimath/dired-view-file-external)
+  (define-key dired-mode-map (kbd "C-c d") 'tesujimath/dired-view-current-dir-external)
   (add-hook 'dired-mode-hook
-            (lambda () (define-key dired-mode-map (kbd "C-c v") 'tesujimath/dired-view-file-external)
-              (define-key dired-mode-map (kbd "C-c d") 'tesujimath/dired-view-current-dir-external))))
+            (lambda () (dired-omit-mode 1))))
 
 (provide 'init-tesujimath-dired)
 ;;; init-tesujimath-dired.el ends here
