@@ -14,7 +14,7 @@
 (require-package 'org-wc)
 
 ;; for export to taskjuggler
-(require 'ox-taskjuggler)
+;(require 'ox-taskjuggler)
 
 (setq org-edit-timestamp-down-means-later nil)
 
