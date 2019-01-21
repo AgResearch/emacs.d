@@ -10,6 +10,7 @@
 (require 'init-tesujimath-auctex)
 (require 'init-tesujimath-dired)
 (require 'init-tesujimath-go)
+(require 'init-tesujimath-groovy)
 (require 'init-tesujimath-julia)
 (require 'init-tesujimath-midnight)
 (require 'init-tesujimath-org)
